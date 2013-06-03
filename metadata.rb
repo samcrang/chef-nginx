@@ -12,7 +12,7 @@ recipe "nginx::source", "Installs nginx from source and sets up configuration wi
   supports os
 end
 
-%w{ build-essential yum apt runit }.each do |cb|
+%w{ build-essential yum apt runit firewall }.each do |cb|
   depends cb
 end
 
